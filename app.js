@@ -27,6 +27,15 @@ bot.on("ready", async () => {
 
 });
 
+bot.on(`guildMemberAdd`, member => {
+  let welChannel = member.guild.channels.find("name", "welcome");
+  /* Using dC for short. */
+
+
+  welChannel.send(`**<@${member.user.id}>, Welcome!**`);
+
+});
+
 bot.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
