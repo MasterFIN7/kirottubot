@@ -32,7 +32,7 @@ bot.on(`guildMemberAdd`, member => {
   /* Using dC for short. */
 
 
-  welChannel.send(`**<@${member.user.id}>, Welcome!**`);
+  welChannel.send(`<@${member.user.id}>, **Welcome!**`);
 
 });
 
