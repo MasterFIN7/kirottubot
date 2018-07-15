@@ -23,7 +23,7 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", async () => {
     console.log(`${bot.user.username} is online!`);
 
-    bot.user.setActivity("You | !!help", {type: "WATCHING"});
+    bot.user.setActivity("You ;)", {type: "WATCHING"});
 
 });
 
@@ -32,7 +32,7 @@ bot.on(`guildMemberAdd`, member => {
   /* Using dC for short. */
 
 
-  welChannel.send(`<@${member.user.id}>, **Welcome!**`);
+  welChannel.send(`**<@${member.user.id}>, Welcome!**`);
 
 });
 
