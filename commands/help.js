@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
   .setThumbnail("https://i.imgur.com/mgDKqhT.png")
   .setFooter("KirottuBot by: Master#4915", "https://i.imgur.com/mgDKqhT.png")
   .setColor("#ffffff")
-  .addField("Komennot:", "help\nping\nsay");
+  .addField("Komennot:", "help\nping\npurge\nsay");
 
   message.channel.send(hEmbed);
 
